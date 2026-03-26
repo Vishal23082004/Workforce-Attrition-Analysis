@@ -257,4 +257,3 @@ col = 'Yes' if 'Yes' in distance_attrition.columns else 'yes'
 distance_attrition['Attrition Rate (%)'] = distance_attrition[col]
 
 print(distance_attrition[['Attrition Rate (%)']])
-
