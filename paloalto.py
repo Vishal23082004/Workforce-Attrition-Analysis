@@ -257,3 +257,37 @@ col = 'Yes' if 'Yes' in distance_attrition.columns else 'yes'
 distance_attrition['Attrition Rate (%)'] = distance_attrition[col]
 
 print(distance_attrition[['Attrition Rate (%)']])
+#kpi 
+total_employees = len(df)
+left_employees = df[df['Attrition'] == 'Yes'].shape[0]
+
+attrition_rate = (left_employees / total_employees) * 100
+print("Attrition Rate:", round(attrition_rate, 1), "%")
+
+dept_attrition = pd.crosstab(
+    df['Department'],
+    df['Attrition'],
+    normalize='index'
+) * 100
+
+print(dept_attrition.round(1))
+
+role_attrition = pd.crosstab(
+    df['JobRole'],
+    df['Attrition'],
+    normalize='index'
+) * 100
+print(role_attrition.round(1))
+
+early_attrition = df[df['YearsAtCompany'] <= 2]
+
+rate = (early_attrition[early_attrition['Attrition'] == 'Yes'].shape[0] /
+        early_attrition.shape[0]) * 100
+print("Early Tenure Attrition:", round(rate, 1), "%")
+
+overtime_attrition = pd.crosstab(
+    df['OverTime'],
+    df['Attrition'],
+    normalize='index'
+) * 100
+print(overtime_attrition.round(1))
