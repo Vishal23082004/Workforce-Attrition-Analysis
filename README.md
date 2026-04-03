@@ -1,48 +1,89 @@
-# Workforce-Attrition-Analysis
-Workforce Attrition Patterns and Risk Hotspot Analysis using Python, Pandas, and Data Visualization techniques.
+# 📊 Workforce Attrition Analysis — Palo Alto Networks
 
+> **Identifying attrition risk hotspots using Python, Pandas, and Streamlit**
 
-# Workforce Attrition Analysis at Palo Alto Networks
+---
 
-## 📌 Project Overview
-This project analyzes employee attrition patterns to identify key risk areas and factors contributing to workforce turnover. The goal is to help organizations make data-driven decisions to improve employee retention.
+## 🎯 Project Overview
 
-## 🎯 Objectives
-- Identify departments and job roles with high attrition
-- Analyze demographic trends (age, gender, education)
-- Study tenure-based attrition patterns
-- Evaluate workload factors like overtime and business travel
+This project analyzes employee attrition patterns at **Palo Alto Networks** to identify key risk areas and help HR teams make data-driven retention decisions.
+
+An interactive **Streamlit app** was built to allow HR professionals to dynamically explore attrition filters — no SQL or Python knowledge required.
+
+---
 
 ## 🛠️ Tools & Technologies
-- Python
-- Pandas
-- NumPy
-- Matplotlib / Seaborn
-- Streamlit
 
-## 📊 Key Analysis Performed
-- Data Cleaning & Preprocessing
-- Attrition Rate Calculation
-- Department-wise Analysis
-- Job Role Analysis
-- Age Group Analysis
-- Overtime Impact
-- Tenure-based Analysis
+| Tool | Purpose |
+|---|---|
+| Python | Core analysis language |
+| Pandas | Data cleaning & transformation |
+| NumPy | Numerical computations |
+| Matplotlib | Data visualization |
+| Streamlit | Interactive web app for HR teams |
+| Jupyter Notebook | EDA and exploration |
+
+---
+
+## 📂 Project Structure
+
+```
+Workforce-Attrition-Analysis/
+│
+├── paloalto.py               # Streamlit app
+├── Palo Alto Networks (2).csv # Dataset
+└── README.md
+```
+
+---
+
+## 🔍 Key Analysis Performed
+
+- ✅ Data Cleaning & Preprocessing
+- ✅ Overall Attrition Rate Calculation
+- ✅ Department-wise & Job Role Analysis
+- ✅ Age Group Segmentation
+- ✅ Overtime Impact on Attrition
+- ✅ Tenure-based Risk Analysis
+- ✅ Work-Life Balance vs Attrition
+- ✅ Business Travel Impact
+
+---
 
 ## 📈 Key Insights
-- High attrition observed in specific departments
-- Early-career employees show higher exit rates
-- Overtime significantly impacts attrition
-- Work-life balance plays a critical role
 
-## 🚀 Project Outcome
-The project provides actionable insights to HR teams for designing targeted retention strategies and improving workforce stability.
+| Finding | Detail |
+|---|---|
+| 🔴 Highest Risk Group | Early-career employees (0–3 years tenure) |
+| ⚠️ Overtime Impact | Employees working overtime show significantly higher attrition |
+| 📉 Department Risk | Specific departments show concentrated attrition hotspots |
+| 🎯 Retention Target | Work-life balance improvement reduces exit risk |
 
-## 📂 Dataset
-Employee dataset containing demographic, job-related, and performance-related features.
+---
 
-## 🏢 Internship Credit
-This project was completed as part of an internship at **Unified Mentor Pvt. Ltd.**, where the problem statement and dataset were provided for analytical learning and real-world exposure.
+## 🚀 How to Run
+
+```bash
+# Clone the repo
+git clone https://github.com/Vishal23082004/Workforce-Attrition-Analysis.git
+cd Workforce-Attrition-Analysis
+
+# Install dependencies
+pip install pandas numpy matplotlib streamlit
+
+# Run the Streamlit app
+streamlit run paloalto.py
+```
+
+---
+
+## 🏢 Project Credit
+
+Completed as part of an internship at **Unified Mentor Pvt. Ltd.**
+
+---
 
 ## 👨‍💻 Author
-Vishal Thakur
+
+**Vishal Thakur**
+[LinkedIn](https://linkedin.com/in/vishal-thakur-b55a39306) · [GitHub](https://github.com/Vishal23082004)
